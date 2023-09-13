@@ -18,4 +18,4 @@ jobs:
           name: srid
       - name: Run CI
         run: |
-          nix run github:srid/nixci -- --extra-substituters 'http://localhost:37515' --option require-sigs false
+          nix run github:srid/nixci -- -- --extra-substituters 'http://localhost:37515' --option require-sigs false
