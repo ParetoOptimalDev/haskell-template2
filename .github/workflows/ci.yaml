@@ -17,4 +17,5 @@ jobs:
         with:
           name: srid
       - name: Build 🔨
-        run: nix run github:srid/nixci -- --extra-substituters 'http://localhost: 37515' --option require-sigs false 
+        run: |
+	  nix run github:srid/nixci -- --extra-substituters 'http://localhost: 37515' --option require-sigs false 
