@@ -16,6 +16,6 @@ jobs:
       - uses: cachix/cachix-action@v12
         with:
           name: srid
-      - name: Build 🔨
+      - name: Run CI
         run: |
-	  nix run github:srid/nixci
+          nix run github:srid/nixci -- --extra-substituters 'http://localhost:37515' --option require-sigs false
